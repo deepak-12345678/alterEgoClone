@@ -1,0 +1,206 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.div1,.div2{
+  width:60px;
+  height:1.5px;
+  margin-top:3px;
+  margin-bottom:3px;
+
+  background-color: white; 
+}
+.page1{
+  background-color: black;
+  position:relative;
+  display:flex;
+  justify-content: center;
+  width:100vw;
+  height:100vh;
+  z-index:-3;
+  position:fixed;
+
+}
+.upper{
+  filter:brightness(0.5);
+}
+.page1 video{
+  z-index:-5;
+  width:100%;
+  height:100%;
+}
+.ham{
+  display:flex;
+  position:fixed;
+  top:50px;
+  left:80px;
+  flex-direction: column;
+}
+.upper{
+  background-color: rgb(0,0,0);
+  width:100%;
+  height:100%;
+}
+
+.mag{
+  height:200px;
+  background-image: url("logo_white.svg");
+  top:10%;
+  /* position:absolute; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 3%;
+
+}
+.mag1{
+  background-image: url("wer.webp");
+  width:250px;
+  height:50px;
+  /* position:absolute; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  top:40%;
+  margin:20px;
+  margin-bottom: 25px;
+  margin-top: -15px;
+}
+.mag2{
+  /* position:absolute; */
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+}
+.mag2 button{
+  border:none;
+  text-align:center;
+  background-color:transparent;
+  color:white;
+  font-family: Arial, sans-serif !important;
+  font-size: 20px;
+  border:2px solid white;
+  border-radius: 50px;
+  padding:7px 30px;
+}
+.mag2 button:hover{
+  background-color: white;
+  color:black;
+  transition: 0.25s;
+}
+.major2{
+  position:absolute;
+  top:60px;
+
+}
+.line{
+  height:1.5px;
+  width:50px;
+  background-color: white;
+  margin:20px;
+}
+.text{
+  display:flex;
+  color:white;
+  width:100vw;
+  position: absolute;
+  top:375px;
+  word-spacing: 3px;
+}
+.left{
+  display: flex;
+  align-items: center;
+  justify-self: flex-start;
+  padding-left:5%;
+  width:50vw;
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+.left:hover{
+  letter-spacing: 4px;
+  transition:0.25s;
+}
+.right{
+  display:flex;
+  align-items: center;
+  justify-self: flex-end;
+  justify-content: flex-end;
+  padding-right:5%;
+  width:50vw;
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+
+}
+.right:hover{
+  letter-spacing: 4px;
+  transition:0.25s ease-in-out;
+}
+.dump{
+  position: relative;
+  width:100%;
+  height:2px;
+}
+.awards{
+  position:absolute;
+  top:410px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.awards img{
+  width:80vw;
+  height:100%;
+}
+.aniline{
+  width:1.5px;
+  height:130px;
+  background-color: aliceblue;
+  position: absolute;
+  top:570px;
+  animation: anima 2s ease-in-out infinite;
+  z-index:5;
+  border-radius:2px;
+}
+.anilinebottom{
+  width:1.25px;
+  height:130px;
+  background-color: transparent;
+  position: absolute;
+  top:570px;
+  z-index:4;
+  background-color: rgb(0,0,0,0.3);
+  border-radius:2px;
+}
+@keyframes anima {
+  from{
+    clip-path: polygon(0 0,100% 0%,100% 0,0 0);
+  }
+  50%{
+    clip-path: polygon(0 0,100% 0%,100% 100%,0 100%);
+  }
+  to{
+    clip-path: polygon(0 100%,100% 100%, 100% 100%, 0 100%);
+  }
+}
+.majorp{
+  background-color: white;
+  position:absolute;
+  top:100vh;
+}
+.photolog{
+  display: flex;
+  width:100%;
+  background-color: white;
+  padding-top:400px;
+  position:absolute;
+  top:100vh;
+}
+.pho1,.pho2,.pho3{
+  width:33.3%;
+  height: 500px;
+}
+.pho1 img,.pho2 img,.pho3 img{
+  height:700px;
+  width:100%;
+}
